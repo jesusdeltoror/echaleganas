@@ -1,7 +1,7 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-app.js";
 import { getFirestore } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-firestore.js";
 
-import { getAuth, createUserWithEmailAndPassword, FacebookAuthProvider } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-auth.js";
+import { getAuth, createUserWithEmailAndPassword, FacebookAuthProvider, signInWithPopup } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-auth.js";
 import { collection, addDoc } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-firestore.js";
 
 const firebaseConfig = {
