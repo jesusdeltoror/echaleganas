@@ -1,8 +1,16 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-app.js";
 import { getFirestore } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-firestore.js";
 
-import { getAuth, createUserWithEmailAndPassword, FacebookAuthProvider, signInWithPopup } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-auth.js";
-import { collection, addDoc } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-firestore.js";
+import { 
+    getAuth, 
+    createUserWithEmailAndPassword, 
+    FacebookAuthProvider, 
+    signInWithPopup 
+    } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-auth.js";
+import { 
+    collection, 
+    addDoc 
+    } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-firestore.js";
 
 const firebaseConfig = {
     apiKey: "AIzaSyAU9kGMihK4A4PD0mQ2zLSyxD6uP4EH7RQ",
@@ -44,7 +52,7 @@ log.addEventListener('click', function () {
 });
 
 facebook.addEventListener('click',() => {
-    const auth = getAuth();
+    
     signInWithPopup(auth, provider)
         .then((result) => {
             // The signed-in user info.
